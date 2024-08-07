@@ -16,10 +16,6 @@
 # production
 /build
 
-# commitlint
-/.husky
-commitlint.*
-
 # misc
 .DS_Store
 *.pem

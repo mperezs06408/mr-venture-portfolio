@@ -1,13 +1,14 @@
-import { Typography } from "@mui/material";
+import { Container } from "@mui/material";
+
+import { CardsSections } from "@/components/organisms";
+import { HomeMocks } from "@/utils";
 
 export default function Home() {
   return (
-    <main>
-      <Typography variant="h1">Hola mundo</Typography>
-      <Typography variant="h2">Hola mundo</Typography>
-      <Typography variant="h3">Hola mundo</Typography>
-      <Typography variant="body1">Hola mundo</Typography>
-      <Typography variant="body2">Hola mundo</Typography>
-    </main>
+    <Container maxWidth={"md"}>
+      {HomeMocks.MAIN_SECTIONS.map((section) => (
+        <CardsSections key={section.sectionTitle} {...section} />
+      ))}
+    </Container>
   );
 }
