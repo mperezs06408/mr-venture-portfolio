@@ -1,11 +1,11 @@
-import type { Metadata, Viewport } from "next";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
-import { Inter } from "next/font/google";
-import "@/styles/generic/reset.css";
+/* eslint-disable @next/next/no-page-custom-font */
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import { baseTheme } from "@/theme";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
+import type { Metadata, Viewport } from "next";
+import "@/styles/generic/reset.css";
+import { ReactNode } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+import { baseTheme } from "@/theme";
 
 export const metadata: Metadata = {
   title: "Mr Venture",
@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="es">
