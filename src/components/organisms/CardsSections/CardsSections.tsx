@@ -32,7 +32,14 @@ export const CardsSections: FC<Props> = ({
       </Typography>
       <Grid container justifyContent={"center"} spacing={2}>
         {cards.map((card) => (
-          <Grid key={card.title} item xs={12} md={6}>
+          <Grid
+            key={card.title}
+            item
+            xs={12}
+            md={6}
+            display={"flex"}
+            justifyContent={"center"}
+          >
             <CardWithTags {...card} />
           </Grid>
         ))}

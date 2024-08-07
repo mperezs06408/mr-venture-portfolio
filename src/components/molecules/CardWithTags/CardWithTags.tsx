@@ -1,7 +1,8 @@
 "use client";
-import { Tags } from "@/components/atoms";
 import { Box, Typography, useTheme } from "@mui/material";
 import { FC } from "react";
+
+import { Tags } from "@/components/atoms";
 
 export interface Props {
   title: string;
@@ -14,6 +15,7 @@ export const CardWithTags: FC<Props> = ({ title, tags = [] }) => {
     <Box
       bgcolor={"primary.light"}
       width={"100%"}
+      maxWidth={spacing(52.25)}
       minHeight={spacing(42.5)}
       position={"relative"}
       borderRadius={5}
