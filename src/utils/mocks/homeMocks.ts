@@ -53,10 +53,6 @@ export const MAIN_SECTIONS = [
         title: "Escuela Invisible",
         tags: ["Design", "Motion", "Art Direction"],
       },
-      {
-        title: "Escuela Invisible",
-        tags: ["Design", "Motion", "Art Direction"],
-      },
 
       {
         title: "Escuela Invisible",
