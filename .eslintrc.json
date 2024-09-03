@@ -10,13 +10,12 @@
   "env": {
     "browser": true,
     "es6": true,
-    "node": true,
-    "jest/globals": true
+    "node": true
   },
   "globals": {
     "JSX": true
   },
-  "plugins": ["react", "jsx-a11y", "prettier", "@typescript-eslint", "jest"],
+  "plugins": ["react", "jsx-a11y", "prettier", "@typescript-eslint"],
   "extends": [
     "next/core-web-vitals",
     "next",
@@ -54,6 +53,11 @@
           "index"
         ],
         "pathGroups": [
+          {
+            "pattern": "@mui/**",
+            "group": "internal",
+            "position": "after"
+          },
           {
             "pattern": "@/**",
             "group": "internal",
